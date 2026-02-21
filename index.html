@@ -3,25 +3,311 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Refactored AUTONEX-WEB</title>
+    <meta name="description" content="AUTONEX - Robotics & Automation Club at SIET Panchkula">
+    <title>AUTONEX — Robotics & Automation Club</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to AUTONEX</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Main Features</h2>
-            <ul>
-                <li>Feature 1</li>
-                <li>Feature 2</li>
-                <li>Feature 3</li>
-            </ul>
-        </section>
-    </main>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo-wrap">
+            <img src="images/logo.png" alt="AUTONEX Logo">
+            <div>
+                <div class="logo-text">AUTONEX</div>
+                <div class="logo-sub">Robotics & Automation Club</div>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#why">Why Join</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+        </ul>
+        <button class="nav-btn">⚙ JOIN NOW</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="eyebrow">SIET Panchkula · Est. 2024 <span class="blink">█</span></p>
+            <h1>
+                <span class="outline">BUILD THE</span>
+                <span class="fill">FUTURE</span>
+                <span class="outline">WITH US</span>
+            </h1>
+            <p class="hero-desc">
+                SIET Panchkula's premier <strong>Robotics & Automation</strong> club.
+                We design, build and program intelligent machines — from autonomous bots to
+                AI-driven systems — pushing the limits of engineering.
+            </p>
+            <div class="hero-btns">
+                <a href="#join" class="btn-primary">⚙ JOIN AUTONEX</a>
+                <a href="#programs" class="btn-secondary">// EXPLORE PROGRAMS</a>
+            </div>
+            <div class="stats-row">
+                <div class="stat">
+                    <div class="stat-n" data-target="50">0</div>
+                    <div class="stat-l">Members</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-n" data-target="12">0</div>
+                    <div class="stat-l">Projects</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-n">3</div>
+                    <div class="stat-l">Programs</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-n">#1</div>
+                    <div class="stat-l">Official Club</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="images/logo.png" alt="AUTONEX Robot">
+        </div>
+    </section>
+
+    <!-- Ticker -->
+    <div class="ticker">
+        <div class="ticker-inner">
+            <span class="tick-item">Robotics Engineering</span>
+            <span class="tick-item">Automation Systems</span>
+            <span class="tick-item">Artificial Intelligence</span>
+            <span class="tick-item">IoT Integration</span>
+            <span class="tick-item">Machine Learning</span>
+            <span class="tick-item">Embedded Systems</span>
+            <span class="tick-item">Computer Vision</span>
+            <span class="tick-item">Industrial Automation</span>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-grid">
+            <div class="about-text">
+                <p class="sec-eyebrow">About AUTONEX</p>
+                <h2>Where <span>Machines</span> Meet Minds</h2>
+                <div class="divider"></div>
+                <p>AUTONEX is SIET Panchkula's <strong>official registered Robotics & Automation Club</strong> — a hands-on engineering community where students design, build, and program intelligent machines from the ground up.</p>
+                <p>From line-following bots to <strong>AI-powered robotic arms</strong>, from circuit design to full autonomous systems — we give students the tools, mentorship, and environment to engineer the future.</p>
+                <p>Compete at <strong>national robotics competitions</strong>, earn certifications, and build a portfolio that sets you apart in the industry.</p>
+            </div>
+            <div class="gear-deco">
+                <div class="gear-ring"></div>
+                <div class="gear-ring"></div>
+                <div class="gear-ring"></div>
+                <div class="gear-center">
+                    <div class="gear-center-text">DESIGN<br>BUILD<br>AUTOMATE</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="programs" id="programs">
+        <div class="programs-head">
+            <p class="sec-eyebrow">Our Programs</p>
+            <h2>Three Tracks. <span>One Mission.</span></h2>
+            <div class="divider"></div>
+        </div>
+        <div class="programs-grid">
+            <article class="prog-card">
+                <div class="prog-num">01 / TRACK</div>
+                <div class="prog-icon">
+                    <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3"/><path d="M6 8a6 6 0 0112 0"/><path d="M8 14l-2 6h12l-2-6"/><line x1="12" y1="11" x2="12" y2="14"/></svg>
+                </div>
+                <h3 class="prog-title">Robotics & Automation</h3>
+                <p class="prog-desc">Design and build autonomous robots. Learn kinematics, actuators, sensors, and real-world automation using ROS, Arduino, and Raspberry Pi.</p>
+                <span class="prog-cta">LEARN MORE →</span>
+            </article>
+
+            <article class="prog-card">
+                <div class="prog-num">02 / TRACK</div>
+                <div class="prog-icon">
+                    <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M12 7v-2M12 15v-2M7 10H5M19 10h-2"/></svg>
+                </div>
+                <h3 class="prog-title">AI & Machine Learning</h3>
+                <p class="prog-desc">Train neural networks, build computer vision pipelines, and deploy ML models on edge devices. Bridge software intelligence and hardware.</p>
+                <span class="prog-cta">LEARN MORE →</span>
+            </article>
+
+            <article class="prog-card">
+                <div class="prog-num">03 / TRACK</div>
+                <div class="prog-icon">
+                    <svg viewBox="0 0 24 24"><path d="M5 12.5a7 7 0 0114 0"/><path d="M2 9a11 11 0 0120 0"/><circle cx="12" cy="19" r="2"/><line x1="12" y1="17" x2="12" y2="15"/></svg>
+                </div>
+                <h3 class="prog-title">IoT & Embedded Systems</h3>
+                <p class="prog-desc">Interface sensors, actuators, and microcontrollers. Build smart connected systems — from industrial monitoring to home automation prototypes.</p>
+                <span class="prog-cta">LEARN MORE →</span>
+            </article>
+        </div>
+    </section>
+
+    <!-- Why Join Section -->
+    <section class="why" id="why">
+        <p class="sec-eyebrow">Why AUTONEX</p>
+        <h2>Built for <span>Engineers</span></h2>
+        <div class="divider"></div>
+        <div class="why-grid">
+            <div class="why-card">
+                <div class="why-num">01</div>
+                <h3 class="why-title">⚙ Hands-On Labs</h3>
+                <p class="why-desc">Real robots, real components, real problems. Every session is a build session — no theory without practice.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-num">02</div>
+                <h3 class="why-title">🏆 Competitions</h3>
+                <p class="why-desc">Represent SIET at national and inter-college robotics competitions and hackathons across India.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-num">03</div>
+                <h3 class="why-title">🤖 Industry Mentors</h3>
+                <p class="why-desc">Learn from engineers and researchers working on real automation and AI systems in the field.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-num">04</div>
+                <h3 class="why-title">📜 Certifications</h3>
+                <p class="why-desc">Earn verifiable certificates in Robotics, Embedded Systems, and AI that strengthen your resume.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team" id="team">
+        <p class="sec-eyebrow">Founding Members</p>
+        <h2>Meet <span>AUTONEX's</span> Core Team</h2>
+        <div class="divider"></div>
+
+        <div class="team-mentor-wrap">
+            <div class="team-card mentor-card">
+                <div class="card-avatar mentor-avatar">
+                    <div>MS</div>
+                </div>
+                <h3 class="card-name">Dr. Milap Sharma</h3>
+                <p class="card-role">Faculty Mentor</p>
+            </div>
+        </div>
+
+        <div class="team-connector">
+            <div class="team-v-line"></div>
+            <div class="team-h-line three-col"></div>
+        </div>
+
+        <div class="team-row three-col">
+            <div class="team-card">
+                <div class="card-avatar">
+                    <div>AV</div>
+                </div>
+                <h3 class="card-name">Aaditya Verma</h3>
+                <p class="card-role">President</p>
+            </div>
+            <div class="team-card">
+                <div class="card-avatar">
+                    <div>RK</div>
+                </div>
+                <h3 class="card-name">Rishabh Kumar</h3>
+                <p class="card-role">Vice President</p>
+            </div>
+            <div class="team-card">
+                <div class="card-avatar">
+                    <div>SS</div>
+                </div>
+                <h3 class="card-name">Sandeep Sharma</h3>
+                <p class="card-role">Coordinator</p>
+            </div>
+        </div>
+
+        <div class="team-connector">
+            <div class="team-v-line"></div>
+            <div class="team-h-line four-col"></div>
+        </div>
+
+        <div class="team-row four-col">
+            <div class="team-card dev-card">
+                <div class="card-avatar">
+                    <div>H</div>
+                </div>
+                <h3 class="card-name small-name">Heemanshu</h3>
+                <p class="card-role small-role">Research & Documentation Lead</p>
+            </div>
+            <div class="team-card dev-card">
+                <div class="card-avatar">
+                    <div>N</div>
+                </div>
+                <h3 class="card-name small-name">Narinder</h3>
+                <p class="card-role small-role">Lead Developer</p>
+            </div>
+            <div class="team-card dev-card">
+                <div class="card-avatar">
+                    <div>HS</div>
+                </div>
+                <h3 class="card-name small-name">Harjeet Singh</h3>
+                <p class="card-role small-role">Backend Developer</p>
+            </div>
+            <div class="team-card dev-card">
+                <div class="card-avatar">
+                    <div>AK</div>
+                </div>
+                <h3 class="card-name small-name">Akash</h3>
+                <p class="card-role small-role">Frontend Developer</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="join">
+        <p class="sec-eyebrow">Ready to Build?</p>
+        <h2>Join SIET's Most <span>Innovative</span> Club</h2>
+        <div class="divider"></div>
+        <p>Open to all engineering branches. No prior experience required — just curiosity and drive.</p>
+        <div class="cta-btns">
+            <a href="#" class="btn-primary">⚙ APPLY NOW</a>
+            <a href="mailto:AUTONEX@siet.edu.in" class="btn-secondary">// CONTACT US</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 AUTONEX. All rights reserved.</p>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="AUTONEX Logo">
+                    <div>
+                        <div class="logo-text">AUTONEX</div>
+                        <div class="logo-sub">Robotics & Automation Club</div>
+                    </div>
+                </div>
+                <p>SIET Panchkula's official registered Robotics & Automation Club. Empowering students to design, build, and automate — one machine at a time.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#programs">Programs</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#team">Team</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>
+                    AUTONEX@siet.edu.in<br><br>
+                    SIET Panchkula,<br>
+                    Haryana, India<br><br>
+                    +91 0172-2929871
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 AUTONEX — SIET Panchkula. ALL RIGHTS RESERVED.</p>
+            <div class="footer-badge">OFFICIAL REGISTERED CLUB</div>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
